@@ -1,0 +1,10 @@
+[package]
+name = "day_1"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "rust_cli_app"
+path = "src/lib.rs"
+
+[dependencies]

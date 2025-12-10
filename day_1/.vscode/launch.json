@@ -1,0 +1,60 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rust-cli-app'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rust-cli-app",
+                    "--package=rust-cli-app"
+                ],
+                "filter": {
+                    "name": "rust-cli-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Run executable 'rust-cli-app'",
+            "cargo": {
+                "args": [
+                    "run",
+                    "--bin=rust-cli-app",
+                    "--package=rust-cli-app"
+                ],
+                "filter": {
+                    "name": "rust-cli-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rust-cli-app",
+                    "--package=rust-cli-app"
+                ],
+                "filter": {
+                    "name": "rust-cli-app",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
