@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cargo: build day_5",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "build",
+                "--bin",
+                "day_5",
+                "--manifest-path",
+                "${workspaceFolder}/day_5/Cargo.toml"
+            ],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+
