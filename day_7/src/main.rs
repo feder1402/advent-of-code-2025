@@ -1,5 +1,3 @@
-use std::collections::BTreeSet;
-
 fn main() {
     // Read the input
     let input = include_str!("../sample_input.txt");
